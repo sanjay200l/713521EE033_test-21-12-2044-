@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Movie Booking System</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #2c3e50;
+      color: white;
+    }
+    .register-container {
+      margin-top: 100px;
+      background-color: #34495e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .form-control {
+      background-color: #ecf0f1;
+      color: #2c3e50;
+    }
+    .btn-primary {
+      background-color: #e74c3c;
+      border-color: #e74c3c;
+    }
+    .btn-primary:hover {
+      background-color: #c0392b;
+      border-color: #c0392b;
+    }
+    @media (max-width: 768px) {
+      .register-container {
+        margin-top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container register-container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h3 class="text-center"><i class="fas fa-user-plus"></i> Register</h3>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="fullName">Full Name <i class="fas fa-user"></i></label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <i class="fas fa-envelope"></i></label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password <i class="fas fa-lock"></i></label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password <i class="fas fa-lock"></i></label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Register <i class="fas fa-user-plus"></i></button>
+        </form>
+        <p class="text-center mt-3"><a href="login.html" class="text-white">Already have an account? Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Add registration logic here
+      alert('Registration successful!');
+    });
+  </script>
+</body>
+</html>

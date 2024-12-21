@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Movie Booking System</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #ecf0f1;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 0;
+    }
+    .movie-card {
+      margin-bottom: 30px;
+    }
+    .btn-primary {
+      background-color: #e74c3c;
+      border-color: #e74c3c;
+    }
+    .btn-primary:hover {
+      background-color: #c0392b;
+      border-color: #c0392b;
+    }
+    @media (max-width: 768px) {
+      .movie-card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><i class="fas fa-film"></i> Movie Booking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html"><i class="fas fa-cogs"></i> Admin</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Movie Listings -->
+  <div class="container mt-5">
+    <h3 class="text-center">Available Movies <i class="fas fa-cinema"></i></h3>
+    <div class="row">
+      <div class="col-md-4 movie-card">
+        <div class="card">
+          <img src="vettaiyan 1.webp" class="card-img-top" alt="Movie 1">
+          <div class="card-body">
+            <h5 class="card-title">Vettaiyan</h5>
+            <p class="card-text">Watch an epic adventure of a lifetime.</p>
+            <a href="confirmation.html" class="btn btn-primary">Book Now <i class="fas fa-ticket-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 movie-card">
+        <div class="card">
+          <img src="movie 2.jpg" class="card-img-top" alt="Movie 2">
+          <div class="card-body">
+            <h5 class="card-title">G.O.A.T</h5>
+            <p class="card-text">Experience the thrill of the unknown.</p>
+            <a href="confirmation.html" class="btn btn-primary">Book Now <i class="fas fa-ticket-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 movie-card">
+        <div class="card">
+          <img src="movie3.jpg" class="card-img-top" alt="Movie 3">
+          <div class="card-body">
+            <h5 class="card-title">Meiyazhagan</h5>
+            <p class="card-text">Join the action-packed adventure.</p>
+            <a href="confirmation.html" class="btn btn-primary">Book Now <i class="fas fa-ticket-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h3 class="text-center">Upcoming Movies <i class="fas fa-cinema"></i></h3>
+    <div class="row">
+      <div class="col-md-4 movie-card">
+        <div class="card">
+          <img src="up1.jpg" class="card-img-top" alt="Movie 1">
+          <div class="card-body">
+            <h5 class="card-title">Viduthalai 2</h5>
+            <p class="card-text">Watch an epic adventure of a lifetime.</p>
+            <a href="confirmation.html" class="btn btn-primary">Book Now <i class="fas fa-ticket-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 movie-card">
+        <div class="card">
+          <img src="up2.jpg" class="card-img-top" alt="Movie 2">
+          <div class="card-body">
+            <h5 class="card-title">Kanguva</h5>
+            <p class="card-text">Experience the thrill of the unknown.</p>
+            <a href="confirmation.html" class="btn btn-primary">Book Now <i class="fas fa-ticket-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 movie-card">
+        <div class="card">
+          <img src="up3.jpg" class="card-img-top" alt="Movie 3">
+          <div class="card-body">
+            <h5 class="card-title">Coolie</h5>
+            <p class="card-text">Join the action-packed adventure.</p>
+            <a href="confirmation.html" class="btn btn-primary">Book Now <i class="fas fa-ticket-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark py-3 text-center text-white">
+    <p>&copy; 2024 Movie Booking System <i class="fas fa-film"></i></p>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
